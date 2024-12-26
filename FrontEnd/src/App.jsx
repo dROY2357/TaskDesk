@@ -34,12 +34,6 @@ function App() {
         password: passwordRef.current.value,
       }),
     };
-    console.log(
-      JSON.stringify({
-        username: usernameRef.current.value,
-        password: passwordRef.current.value,
-      })
-    );
     if (isformSubmitted) {
       fetch("http://localhost:3100/api/auth/login", options)
         .then((res) => {
