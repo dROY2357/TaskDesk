@@ -1,7 +1,8 @@
 import { userContext } from "../../contexts/context";
 import { useContext } from "react";
 
-const LoginComp = (props) => {
+const LoginComp = () => {
+  //destructure the context userContext using useContext to get the handleFormSubmit, usernameRef, passwordRef, and loginResponse
   const { handleFormSubmit, usernameRef, passwordRef, loginResponse } =
     useContext(userContext);
 
@@ -35,7 +36,6 @@ const LoginComp = (props) => {
           </form>
         </div>
       </div>
-      {/* {loginResponse && <p>{JSON.stringify(loginResponse)}</p>} */}
     </>
   );
 };
