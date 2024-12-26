@@ -95,10 +95,6 @@ function App() {
     }
   }, [isLoggedIn]); //useEffect dependency on isLoggedIn
 
-  console.log(loginResponse);
-  console.log(isLoggedIn);
-  console.log(userType);
-
   return (
     //userContext.Provider to provide the context to the child components
     <userContext.Provider
